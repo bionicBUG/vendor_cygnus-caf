@@ -67,3 +67,7 @@ include vendor/cygnus/configs/props.mk
 
 # Version
 $(call inherit-product, vendor/cygnus/configs/versioning.mk)
+
+# include additional build utilities
+include vendor/cygnus/utils.mk
+
