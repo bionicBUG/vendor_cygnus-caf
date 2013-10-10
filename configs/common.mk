@@ -68,6 +68,10 @@ include vendor/cygnus/configs/props.mk
 # Version
 $(call inherit-product, vendor/cygnus/configs/versioning.mk)
 
+# World APN list
+PRODUCT_COPY_FILES += \
+    device/orchid/common/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+
 # include additional build utilities
 include vendor/cygnus/utils.mk
 
